@@ -17,7 +17,7 @@ export default function ReportList() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:5000/report")
+    fetch("https://city-issue-report-backend.onrender.com/report")
       .then((res) => res.json())
       .then((data) => setReports(data))
       .finally(() => setLoading(false));

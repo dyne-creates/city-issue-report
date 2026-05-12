@@ -28,7 +28,7 @@ export default function ReportDetails() {
     const fetchReport = async () => {
         try {
             const res = await fetch(
-                `http://localhost:5000/report/${id}`
+                `https://city-issue-report-backend.onrender.com/report/${id}`
             );
 
             const data = await res.json();

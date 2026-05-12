@@ -42,7 +42,7 @@ export default function Admin() {
       setLoading(true);
 
       const res = await fetch(
-        "http://localhost:5000/report"
+        "https://city-issue-report-backend.onrender.com/report"
       );
       const data = await res.json();
 
@@ -63,7 +63,7 @@ export default function Admin() {
       setLoading(true);
 
       const res = await fetch(
-        "http://localhost:5000/admin/login",
+        "https://city-issue-report-backend.onrender.com/admin/login",
         {
           method: "POST",
           headers: {
@@ -94,7 +94,7 @@ export default function Admin() {
   ) => {
     try {
       const res = await fetch(
-        `http://localhost:5000/report/${id}`,
+        `https://city-issue-report-backend.onrender.com/report/${id}`,
         {
           method: "PUT",
           headers: {
@@ -131,7 +131,7 @@ export default function Admin() {
 
     try {
       const res = await fetch(
-        `http://localhost:5000/report/${id}`,
+        `https://city-issue-report-backend.onrender.com/report/${id}`,
         {
           method: "DELETE",
         }

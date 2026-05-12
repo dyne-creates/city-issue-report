@@ -20,7 +20,7 @@ export default function Home() {
 
   const fetchReports = async () => {
     try {
-      const res = await fetch("http://localhost:5000/report");
+      const res = await fetch("https://city-issue-report-backend.onrender.com/report");
       const data = await res.json();
       setReports(data);
     } catch (error) {

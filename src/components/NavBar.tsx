@@ -12,7 +12,7 @@ export default function NavBar() {
       <Container>
         <Navbar.Brand
           as={Link}
-          to="/"
+          to="/city-issue-report"
           className="fw-bold fs-4"
         >
           CITY ISSUE REPORT
@@ -22,9 +22,9 @@ export default function NavBar() {
 
         <Navbar.Collapse>
           <Nav className="ms-auto align-items-center gap-2">
-            <Nav.Link as={Link} className="fw-bold" to="/">Home</Nav.Link>
-            <Nav.Link as={Link} className="fw-bold" to="/report-issue">Report Issue</Nav.Link>
-            <Nav.Link as={Link} className="fw-bold" to="/report-lists">Reports</Nav.Link>
+            <Nav.Link as={Link} className="fw-bold" to="/city-issue-report">Home</Nav.Link>
+            <Nav.Link as={Link} className="fw-bold" to="/city-issue-report/report-issue">Report Issue</Nav.Link>
+            <Nav.Link as={Link} className="fw-bold" to="/city-issue-report/report-lists">Reports</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

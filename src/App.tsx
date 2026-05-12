@@ -19,11 +19,11 @@ export default function App() {
 
         <main className="flex-grow-1">
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/report-issue" element={<ReportIssue />} />
-            <Route path="/report-lists" element={<ReportLists />} />
-            <Route path="/report-details/:id" element={<ReportDetails />} />
-            <Route path="/admin" element={<Admin />} />
+            <Route path="/city-issue-report" element={<Home />} />
+            <Route path="/city-issue-report/report-issue" element={<ReportIssue />} />
+            <Route path="/city-issue-report/report-lists" element={<ReportLists />} />
+            <Route path="/city-issue-report/report-details/:id" element={<ReportDetails />} />
+            <Route path="/city-issue-report/admin" element={<Admin />} />
             <Route path="*" element={<PageNotFound />} />
           </Routes>
         </main>

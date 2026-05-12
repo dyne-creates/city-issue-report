@@ -55,7 +55,7 @@ export default function ReportIssue() {
         try {
             setLoading(true);
 
-            const res = await fetch("http://localhost:5000/report", {
+            const res = await fetch("https://city-issue-report-backend.onrender.com/report", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
